@@ -16,8 +16,16 @@ class MainActivity : AppCompatActivity() {
             // Find max with 2 number
             val a = 10 // Use val if value not changed, like final in java
             val b = 20
-            val max = if (a>b) a else b
+            val max = if (a > b) a else b
             Log.d("MAX NUMBER", "" + max)
+
+            val x = 10
+            when (x) {
+                10 -> Log.d("WHEN", "x == 10")
+                else -> {
+                    Log.d("WHEN", "x != 10")
+                }
+            }
 
         }
     }
